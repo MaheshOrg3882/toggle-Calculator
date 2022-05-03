@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'toggleCalc';
+  title = 'Ass1';
+  simpleCalculatorDisplay  = false;
+  scientificCalculatorDisplay= true;
+  toggleCalculator(){
+    this.simpleCalculatorDisplay = !this.simpleCalculatorDisplay;
+    this.scientificCalculatorDisplay = !this.scientificCalculatorDisplay;
+  }
 }

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'toggleCalc'`, () => {
+  it(`should have as title 'Ass1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('toggleCalc');
+    expect(app.title).toEqual('Ass1');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('toggleCalc app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Ass1 app is running!');
   });
 });
